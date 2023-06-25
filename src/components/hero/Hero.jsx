@@ -44,7 +44,7 @@ export default function Hero() {
             </div>
         </div>
         <div className="right-h">
-          <button className='btn'>Join Now</button>
+          <button className='btn'>Register Now</button>
           <div className="heart-rate">
             <img src={heart} alt="" />
             <span>Heart Rate</span>
