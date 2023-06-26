@@ -17,6 +17,9 @@ export default function Footer() {
             <div className="logo-f">
                 <img src={logo} alt="" />
             </div>
+            <div className="instructor">
+              <span>© Norman Nandabi</span>
+            </div>
         </div>
         <div className="blur blur-f-1"></div>
         <div className="blur blur-f-2"></div>

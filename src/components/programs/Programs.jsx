@@ -1,6 +1,6 @@
 import './programs.css'
 import { programsData } from '../../data/programsData.js'
-import arrow from'../../assets/rightArrow.png'
+// import arrow from'../../assets/rightArrow.png'
 
 export default function Programs() {
   return (
@@ -16,10 +16,10 @@ export default function Programs() {
                 {program.image}
                 <span>{program.heading}</span>
                 <span>{program.details}</span>
-            <div className="join-now">
+            {/* <div className="join-now">
                 <span>Join Now</span>
                 <img src={arrow} alt="" />
-            </div>
+            </div> */}
             </div>
           ))}
         </div>

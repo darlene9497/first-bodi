@@ -31,6 +31,10 @@
     width: 10rem;
 }
 
+.instructor{
+    color: white;
+}
+
 .blur-f-1{
     bottom: 0;
     right: 15%;
