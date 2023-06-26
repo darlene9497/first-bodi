@@ -4,7 +4,7 @@ import arrow from'../../assets/rightArrow.png'
 
 export default function Programs() {
   return (
-    <div className='programs'>
+    <div className='programs' id='programs'>
         <div className="programs-header">
             <span className='stroke-text'>Explore our</span>
             <span>Programs</span>

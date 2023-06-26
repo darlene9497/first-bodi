@@ -7,7 +7,7 @@ import tick from '../../assets/tick.png'
 
 export default function Reason() {
   return (
-    <div className='reason'>
+    <div className='reason' id='why_us'>
         <div className="left-r">
             <img src={img1} alt="" />
             <img src={img3} alt="" />
