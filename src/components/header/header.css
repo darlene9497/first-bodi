@@ -3,9 +3,13 @@
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     width: 12rem;
-    height: 4rem;
+    height: auto; 
+    max-width: 100%; 
+    display: block;
+    margin-top: -2.5rem;
+    margin-left: -2rem;
 }
 
 .header-menu{

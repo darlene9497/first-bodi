@@ -1,5 +1,5 @@
 import './header.css'
-import Logo from '../../assets/firstbodilogo.png'
+import Logo from '../../assets/bodyjump.png'
 import Bar from '../../assets/bar.png'
 import { useState } from 'react'
 import { Link } from 'react-scroll'
@@ -9,20 +9,23 @@ export default function Header() {
   const [menuOpened, setMenuOpened] = useState(false)
 
   return (
-    <div className="header">
-        <img src={Logo} alt="" className='logo' />
-        {menuOpened === false && mobile === true ? (
-          <div 
-          style={{ 
-            backgroundColor:'white', 
-            padding:'0.5rem', 
-            borderRadius:'5px' 
-          }}
-          onClick={() => setMenuOpened(true)}
-          >
-            <img src={Bar} alt="" style={{width:'1.5rem', height:'1.5rem'}} />
-          </div>
-        ) : (
+  <div className="header">
+    <div className="logo-container">
+      <img src={Logo} alt="" className='logo' />
+    </div>
+      {menuOpened === false && mobile === true ? (
+       <div 
+        className="menu-icon"
+        style={{ 
+          backgroundColor: 'white', 
+          padding: '0.5rem', 
+          borderRadius: '5px' 
+        }}
+        onClick={() => setMenuOpened(true)}
+      >
+        <img src={Bar} alt="" style={{ width: '1.5rem', height: '1.5rem' }} />
+       </div>
+       ) : (
         <ul className='header-menu'>
             <li onClick={() => setMenuOpened(false)}>
               <Link onClick={() => setMenuOpened(false)}
