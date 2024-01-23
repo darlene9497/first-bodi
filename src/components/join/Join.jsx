@@ -4,13 +4,14 @@ import emailjs from '@emailjs/browser';
 
 export default function Join() {
   const form = useRef(null);
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    if (form.current && email) {
+  
+    if (form.current && name && email) {
       emailjs
         .sendForm('service_uqr4z1y', 'template_akmaek5', form.current, 'uEp8ptSzaD4gWijrm')
         .then(
@@ -21,10 +22,16 @@ export default function Join() {
             console.log(error.text);
           }
         );
-
+  
+      setName('');
       setEmail('');
       setSubmitted(true);
     }
+  };
+    
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
   };
 
   const handleEmailChange = (e) => {
@@ -46,6 +53,14 @@ export default function Join() {
       </div>
       <div className="right-j">
         <form ref={form} className="email-container" onSubmit={sendEmail}>
+        <input
+            type="text"
+            name="user_name"
+            placeholder={submitted ? 'Name submitted!' : 'Enter your name'}
+            value={name}
+            onChange={handleNameChange}
+            disabled={submitted}
+          />
           <input
             type="email"
             name="user_email"

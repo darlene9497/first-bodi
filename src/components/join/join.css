@@ -68,4 +68,14 @@
     .right-j{
         padding: 2rem;
     }
+
+    .email-container{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .email-container input{
+        padding: 1rem;
+    }
 }
