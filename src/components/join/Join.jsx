@@ -64,7 +64,7 @@ export default function Join() {
           <input
             type="email"
             name="user_email"
-            placeholder={submitted ? 'Email sent!' : 'Enter your email'}
+            placeholder={submitted ? 'Email submitted!' : 'Enter your email'}
             value={email}
             onChange={handleEmailChange}
             disabled={submitted}

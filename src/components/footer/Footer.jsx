@@ -1,8 +1,9 @@
 import './footer.css'
 import instagram from'../../assets/instagram.png'
 import facebook from'../../assets/fb.png'
-import twitter from'../../assets/Twitter.png'
+import twitter from'../../assets/twitter.png'
 import logo from'../../assets/firstbodilogo.png'
+import youtube from'../../assets/youtube.png'
 
 export default function Footer() {
   return (
@@ -11,14 +12,15 @@ export default function Footer() {
         <div className="footer">
             <div className="social-links">
                 <img src={instagram} alt="" />
-                <img src={twitter} alt="" />
+                <img className="twitter" src={twitter} alt="" />
                 <img src={facebook} alt="" />
+                <img className="yt" src={youtube} alt="" />
             </div>
             <div className="logo-f">
                 <img src={logo} alt="" />
             </div>
             <div className="instructor">
-              <span>© Norman Nandabi</span>
+              <span>© All rights reserved 2024</span>
             </div>
         </div>
         <div className="blur blur-f-1"></div>
